@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+/* ===============================================
+             I   N   T   R   O
+====================================================*/
+
+
+.intro-sec{
+    background-image: url(../images/home-page/intro-img.svg);
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-position-x: 870px;
+    background-position-y: 155px;
+    background-size: 30%;
+    background-color: #EDF3F8;
+    margin-top: -152px;
+    padding-top: 152px;
+    padding-bottom: 165px;
+    
+}
+
+
+
+.intro-title{
+    font-family: DM Serif Display;
+    font-weight: 400;
+    width: 546px;
+    font-size: 72px;
+    color: #36536B;
+    margin-top: 152px;
+}
+
+
+
+.intro-button {
+    @include pink-button;
+    margin-left: 269px;
+    margin-top: -48px;
+    opacity: 100%;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.1s all ease;
+
+}
+
+.intro-reg{
+    width: 445px;
+    height: 48px;
+    border: 0;
+    border-radius: 50px;
+    padding-left: 27px;
+    padding-right: 180px;
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 15px;
+    opacity: 70%;
+    color: #36536bac;
+    margin-top: 40px;
+    cursor: pointer;
+    box-shadow: 10px 10px 25px -10px #36536B40;
+    transition: 0.1s all ease;
+
+    
+}
+
+.intro-give-answers{
+    font-family: Public Sans;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 27px;
+    margin-top: 16px;
+    color: #6C8294;
+}
+
+.contact-us {
+    font-weight: 700;
+    color: #6C8294;
+    transition: 0.1s all ease;
+}
+
+
+
+/* ===========================
+I  N  T  R  O    H   O  V  E  R  
+============================= */
+
+.contact-us:hover{
+    color: #36536B;
+}
+
+.intro-button:hover {
+    opacity: 70%;
+}
+
+.intro-reg:hover{
+    opacity: 100%;
+}
+
+@media only screen and (max-width:768px){
+    .intro-sec{
+        display: flex;
+        background-image: url(../images/home-page/intro-img.svg);
+        background-position: center;
+        background-position-y: 175px ;
+        align-items: center;       
+       
+    }
+    
+    .intro-title{
+        width: 573px;
+        text-align: center;
+        font-size: 48px;
+        margin-top: 370px;
+    }
+        .intro-form{
+        text-align: center;    
+    }
+    .intro-button{
+        margin-left: 333px;
+    }
+    .intro-give-answers{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .intro-sec{
+        display: flex;
+        background-image: url(../images/home-page/intro-img.svg);
+        background-size: 140px;
+        text-align: center;
+        background-position: center;
+        background-position-y: 175px ;
+    }    
+    .intro-title{
+        width: 327px;
+        font-size: 32px;
+        
+        margin-top: 230px;
+    }
+    .intro-reg{
+        width: 327px;
+        padding-right: 0;
+    }
+    .intro-button{
+        width: 327px;
+        margin-left: -165px;
+        margin-top: 20px;
+    }
+    .intro-give-answers{
+        margin-top: 90px;
+        margin-left: -25px;
+    }
+}
+
+/*========================================
+W   I  T   H      C   O   M   P   A   N  Y
+=========================================*/
+
+.with-company{
+    background-color: #1B262F;
+    background-image: url(../images/home-page/company-bgimg.svg);
+    background-repeat: no-repeat;
+    
+    padding: 100px;
+}
+
+.companys-title{
+    font-family: DM Serif Display;
+    font-weight: 400;
+    color: #FBFCFE;
+
+    font-size: 48px;
+}
+
+.with-company--info{
+    font-family: Public Sans;
+    font-weight: 15px;
+    font-size: 15px;
+    width: 445px;
+    color: #FBFCFE;
+    opacity: 70%;
+    line-height: 28px;
+    margin-top: 24px;
+}
+
+.with-company--but{
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: #1b262f00;
+    color: white;
+    cursor: pointer;
+    margin-top: 48px;
+    transition: 0.6s all ease;
+    
+}
+
+.companies-logo{
+    display: inline-block;
+    position: absolute;
+    margin-left: 440px;
+    margin-top: -108px;
+}
+
+
+
+/* ======================================
+        with company- hover     
+=========================================*/
+.with-company--but:hover{
+    background-color: white;
+    color: #1B262F;
+}
+
+@media only screen and (max-width:768px){
+    .with-company{
+    display: flex;    
+    text-align: center;
+    background-image: url(../images/home-page/tablet-bgimg.svg);
+    background-repeat: no-repeat;
+    }
+    .companies-logo{
+        margin-left: -320px;
+        margin-top: -380px;
+        position: absolute;
+
+    }
+    .companys-title{
+        margin-top: 200px;
+    }
+    
+}
+
+@media only screen and (max-width:375px){
+    .with-company{
+        background-color: #1B262F;
+        background-image:url(../images/home-page/mobile-bgimg-company.svg), url(../images/home-page/company-bgimg.svg);
+        background-position-y: 80px, -200px;
+        background-position-x: 47px, 0;
+        background-repeat: no-repeat;
+       
+    }
+    .companies-logo{
+        display: none;
+        
+    }
+    .companys-title{
+        width: 327px;
+        font-size: 32px;
+        margin-left: -75px;
+    }
+    .with-company--info{
+        width: 329px;
+        font-size: 15px;
+        margin-left: -80px;
+    }
+    .with-company--but{
+        margin-top: 70px;
+        margin-left: -80px;
+    }
+}
+
+/*========================================
+            EASY SEC
+===========================================*/
+
+.easy-sec {
+    background-color: #EDF3F8;
+}
+
+.easy-sec--img{
+    margin-top: 100px;
+    margin-left: -55px;
+    display: flex;
+}
+
+.easy--title{
+    font-family: DM Serif Display;
+    font-weight: 400;
+    color: #36536B;
+    font-size: 48px;
+}
+
+.easy-content{
+    display: flex;
+    align-items: center;
+}
+
+.easy--info{
+    width: 445px;
+    margin-top: 24px;
+    font-family: Public Sans;
+    font-weight: 400;
+    font-size: 15px;
+    color: #6C8294;
+}
+
+.easy-content--right{
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width:768px){
+    .easy-sec{
+        padding-top: 64px;
+    }
+    .easy-sec--img{
+        position: absolute;
+        margin-top: -200px;
+        margin-left: 110px;
+        text-align: center;
+    }
+    .easy--title{
+        text-align: center;
+        margin-top: 350px;
+        margin-left: -70px;
+        
+    }
+    .easy--info{
+        text-align: center;
+        width: 573px;
+        margin-left: -75px;
+    }
+    .easy-content--right{
+        text-align: center;
+        margin-left: 175px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .easy-sec{
+        padding-top: 250px;
+        padding-bottom: 50px;
+    }
+    .easy-sec--img{
+        width: 328px;
+        margin-top: -400px;
+        margin-left: 39px;
+        margin-bottom: 90px;
+    }
+    .easy--title{
+        max-width: 327px;
+        font-size: 36px;
+        margin-left: -155px;
+        
+    }
+    .easy-content--right{
+        margin-top: -300px;
+    }
+    .easy--info{
+        width: 329px;
+        margin-left: -155px;
+        line-height: 28px;
+    }
+}
+
+/* ================================ 
+    S  I  M  P  L  E     U  E
+====================================*/
+
+.simple-Ue{
+    background-color: #EDF3F8;
+}
+
+.simple-content{
+    display: flex;
+    align-items: center;
+}
+
+.simple-content--left{
+    display: inline-block;
+    margin-right: 45px ;
+}
+
+
+.simple--title{
+    font-family: DM Serif Display;
+    font-weight: 400;
+    color: #36536B;
+    font-size: 48px;
+}
+
+.simple--info{
+    width: 445px;
+    margin-top: 24px;
+    font-family: Public Sans;
+    font-weight: 400;
+    font-size: 15px;
+    color: #6C8294;
+}
+
+.simple--img{
+    display: inline-block;
+}
+
+@media only screen and (max-width:768px){
+    .simple-Ue{
+        padding-top: 140px;
+        padding-bottom: 64px;
+    }
+    .simple--img{
+        width: 400px;
+        position: absolute;
+        margin-left:200px;
+        margin-top: -300px;
+        
+    }
+    .simple--title{
+        text-align: center;
+        margin-top: 450px;
+        margin-left: -50px;
+        
+    }
+    .simple--info{
+        text-align: center;
+        width: 573px;
+        margin-left: -75px;
+    }
+    .simple-content--left{
+        margin-left: 170px;
+        margin-top: -300px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .simple--img{
+        width: 328px;
+        margin-left: 33px;
+        margin-top: -350px;
+        margin-bottom: 40px;
+    }
+    .simple--title{
+        font-size: 36px;
+        margin-left: -150px;
+    }
+    .simple--info{
+        font-size: 15px;
+        width: 328px;
+        margin-left: -150px;
+        line-height: 28px;
+    }
+    .simple-content--left{
+        margin-top: -400px;
+    }
+}
+
+/* ============================================
+    F  U  T  U  R  E    S  E  C  T  I  O  N
+=============================================*/
+
+.feature-sec{
+    background-color: #EDF3F8;
+    padding-top: 50px ;
+    padding-bottom: 96px;
+}
+
+.feature--img{
+    text-align: center;
+}
+
+.feature--title{
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #36536B;
+    margin-top: 32px;
+}
+
+.feature--info{
+    text-align: center;
+    width: 344px;
+    color: #6C8294;
+    font-family: Public Sans;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 16px;
+    font-size: 15px;
+}
+
+.feature-box-first{
+    text-align: center;
+    display: inline-block;
+    margin-right: 35px;
+    
+}
+
+.feature-box-second{
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.feature-box-third{
+    text-align: center;
+    display: inline-block;
+    margin-left: 35px;
+    
+}
+
+@media only screen and (max-width:768px) {
+    .feature-sec{
+        text-align: center;
+        padding-top: 64px;
+    }
+    
+    .feature--img{
+        width:80px;
+    }
+    .feature--info{
+        width: 223px;
+    }
+    .feature-box-first{
+        margin-right: 10px;
+    }
+    
+    .feature-box-third{
+        margin-left: 10px;
+    }
+    
+}
+
+@media only screen and (max-width:375px){
+    .feature--img{
+        width: 106px;
+    }
+    .feature--info{
+        width: 328px;
+    }
+    .feature-box-second{
+        margin-top: 48px;
+    }
+    .feature-box-third{
+        margin-top: 48px;
+    }
+}
+
+/* =======================================
+T  O    S T  A  R  T    S E  C  T  I  O  N
+==========================================*/
+
+.to-start {
+    background-color: #EDF3F8;
+    padding-bottom: 60px;
+}
+
+.to-start--title{
+    font-family: DM Serif Display;
+    font-weight: 400;
+    color: #36536B;
+    font-size: 48px;
+    
+}
+
+.to-start--button{
+    @include pink-button;
+    margin-left: 934px;
+    opacity: 100%;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.1s all ease;
+    
+}
+
+.to-start--reg{
+    width: 445px;
+    height: 48px;
+    border: 0;
+    border-radius: 50px;
+    padding-left: 27px;
+    padding-right: 180px;
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 15px;
+    opacity: 70%;
+    color: #36536bac;
+    margin-left: 343.5px;
+    box-shadow: 10px 10px 25px -10px #36536B40;
+    cursor: pointer;
+    transition: 0.1s all ease;
+    
+}
+
+.to-start--content{
+    display: flex;
+    align-items: center;
+}
+
+.to-start--button:hover{
+    opacity: 70%;
+}
+
+.to-start--reg:hover{
+    opacity: 100%;
+}
+
+@media only screen and (max-width:768px) {
+    .to-start{
+        padding-bottom: 150px;
+    } 
+    .to-start--title{
+        text-align: center;
+        margin-left: 230px;
+        margin-bottom: 40px;
+        
+        
+    }
+    .to-start--reg{
+        position: absolute;
+    }
+    .to-start--button{
+        position: absolute;
+        margin-top: 149px;
+        margin-left: 433px;
+    }
+    .to-start-form{
+        position: absolute;
+        margin-top: 100px;
+        margin-left: -180px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .to-start{
+        padding-bottom: 230px;
+    }
+    .to-start--title{
+        margin-left: 75px;
+        font-size: 32px;
+        text-align: center;
+    }
+    .to-start--reg{
+        width: 327px;
+        margin-top: -10px;
+        margin-left: 200px;
+        padding-right: 30px;
+
+    }
+    .to-start--button{
+        width: 327px;
+        margin-left: 20px;
+        margin-bottom: -120px;
+    }
+}
+

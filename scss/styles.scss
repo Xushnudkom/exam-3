@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "generals";
+@import "./layout/nav";
+@import "./layout/footer";
+@import "./blocks/all_blocks";
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/pricing";
